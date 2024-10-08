@@ -15,13 +15,13 @@ export function HomeScreen({ route }: { route: any }) {
       <Text style={styles.header}>Menu Items</Text>
 
       <View style={styles.summary}>
-        <Text style={styles.summaryTI}>Total Items: {totalItems}</Text>
-        <Text style={styles.summaryAP}>Average Price: R{averagePrice.toFixed(2)}</Text>
+        <Text style={styles.summaryTI}>Total Items {totalItems}</Text>
+        <Text style={styles.summaryAP}>Average Price R{averagePrice.toFixed(2)}</Text>
       </View>
 
       <ScrollView style={styles.scrollView}>
         {menuList.length === 0 ? (
-          <Text>No items in the menu</Text>
+          <Text style={styles.listNIM}>No items in the menu</Text>
         ) : (
           menuList.map((item: any, index: number) => (
             <View key={index} style={styles.listItem}>
@@ -93,12 +93,14 @@ const styles = StyleSheet.create({
   },
   summaryTI: {
     fontSize: 18,
-    fontWeight: 'bold',
     color: '#a67803',
   },
   summaryAP: {
     fontSize: 14,
-    fontWeight: 'bold',
     color: '#83a603',
+  },
+  listNIM: {
+    fontSize: 14,
+    color: '#808080',
   },
 });

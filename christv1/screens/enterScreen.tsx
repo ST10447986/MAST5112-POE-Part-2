@@ -64,18 +64,21 @@ export function EnterScreen({ navigation }: { navigation: any }) {
       <TextInput
         style={styles.input}
         placeholder="Dish Name"
+        placeholderTextColor="#808080"
         onChangeText={setMTitle}
         value={mTitle}
       />
       <TextInput
         style={styles.input}
         placeholder="Description"
+        placeholderTextColor="#808080"
         onChangeText={setMDescription}
         value={mDescription}
       />
       <TextInput
         style={styles.input}
         placeholder="Price"
+        placeholderTextColor="#808080"
         onChangeText={setMPrice}
         value={mPrice}
         keyboardType="numeric"
@@ -115,7 +118,7 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 100,
     textAlign: 'center',
     color: '#f21905',
   },
