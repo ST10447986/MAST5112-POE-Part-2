@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   header: {
-    fontSize: 20,
+    fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 10,
     textAlign: 'center',
     color: '#f21905',
   },
@@ -70,15 +70,18 @@ const styles = StyleSheet.create({
   itemTitle: {
     fontSize: 18,
     fontWeight: 'bold',
+    marginBottom: 5,
     color: '#ff9f29',
   },
   itemDes: {
     fontSize: 12,
     color: '#fff',
+    marginBottom: 5,
   },
   itemPrice: {
     fontSize: 14,
     color: '#A1CD00',
+    marginBottom: 5,
   },
   itemCourse: {
     fontSize: 14,
